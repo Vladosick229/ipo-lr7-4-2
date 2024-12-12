@@ -9,7 +9,7 @@ numb = input("Введите номер квалификации: ")
 print("\n=============== Результат поиска ===============")
 for item in data:
     if item['model'] == 'data.skill' and item['fields']['code'].startswith(numb):#startswith проверяет, начинается ли строка на указанную подстроку
-        print(f"{item['fields']['code']} >> {item['fields']['title']}")
+        print(f"{item['fields']['code']} >> Специальность {item['fields']['title']}")
         found = True
 
 if not found:
